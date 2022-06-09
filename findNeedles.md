@@ -30,7 +30,7 @@
 
 > :memo: ***Leaving a parameter blank returns null***
 > 
-> If you do not include `String[] needles` and `String haystack` parameters, the output will be null. 
+> If you do not include values for the `String[] needles` and `String haystack` parameters, the output will be null. 
 
 [Back to ***On this page***](#top)
 
