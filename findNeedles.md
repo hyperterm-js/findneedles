@@ -1,15 +1,4 @@
-<!-- Confidential + Proprietary Google&#174;-->
-<!-- Exercise #1 - findNeedles (required)-->
-<!-- This exercise has two required parts:-->
-<!--
-1. Write an API reference document that explains
-how to call this method. Your audience for this
-document is an experienced Java programmer.
- 
-2. Assume you have a chance to send comments or
-questions to the person who wrote the code.
-Suggest ways to improve the code, for example,
-to reduce memory usage or enhance features -->
+<!-- Source code reference is Confidential + Proprietary Google&#174;-->
 
 # findNeedles() API <a name="top"/>
 
@@ -27,7 +16,7 @@ to reduce memory usage or enhance features -->
 
 ## Getting Started <a name="Overview"/>
 
-**findNeedles()** is a Java-based API called with two mandatory user input parameters:
+**findNeedles()** is a Java-based API called with two mandatory user inputs:
 
 - `String[] needles`: an array of **up to 5 elements**; referred to as *needles* or *needle*
 - `String haystack`: a string of unrestricted length; referred to as *haystacks* or *haystack*
