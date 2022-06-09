@@ -39,7 +39,7 @@ to reduce memory usage or enhance features -->
 > 
 > Positive results are only returned if both the case of words and phrase spacing match exactly between your *needle* and the *haystack*.
 
-> :memo: ***Leaving a parameter blank***
+> :memo: ***Leaving a parameter blank returns null***
 > 
 > If you do not include `String[] needles` and `String haystack` parameters, the output will be null. 
 
