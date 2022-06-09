@@ -37,11 +37,11 @@ to reduce memory usage or enhance features -->
 > :memo: ***findNeedles() is case-sensitive and space-sensitive***
 > <a name="case_sensitive"/>
 > 
-> Positive results are only returned if both the case of words and phrase spacing match exactly.
+> Positive results are only returned if both the case of words and phrase spacing match exactly between your *needle* and the *haystack*.
 
 > :memo: ***Leaving a parameter blank***
 > 
-> If you do not input both parameters, the output will be null. 
+> If you do not include `String[] needles` and `String haystack` parameters, the output will be null. 
 
 [Back to ***On this page***](#top)
 
