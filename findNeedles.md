@@ -8,7 +8,7 @@
 - [findNeedles() example](#Example)
 - [findNeedles() error messages](#Errors)
 >
->[Use case example](#Uses)
+>[Use case examples](#Uses)
 >
 >[Code references](#Code)
 - [Method reference](#Method_ref)
@@ -18,8 +18,8 @@
 
 **findNeedles()** is a Java-based API called with two mandatory user inputs:
 
-- `String[] needles`: an array of **up to 5 elements**; referred to as *needles* or *needle*
-- `String haystack`: a string of unrestricted length; referred to as *haystacks* or *haystack*
+- `String[] needles`: an array of **up to 5 elements**; referred to as *needle* or *needles*
+- `String haystack`: a string of unrestricted length; referred to as *haystack* or *haystacks*
 
 **findNeedles()** searches for *needles* in *haystack* and returns each *needle* with the number of times it occurred in *haystack*. 
 
@@ -56,7 +56,7 @@ In this example, `Heavy` returns `1`, because it appears twice in *haystack* but
 
 > 🚨 ***"Too many words!" error message:***
 > 
-> The array within *String[] needles* can only take up to 5 elements. 
+> The array within `String[] needles` can only take up to 5 elements. 
 
 	String haystack = "Heavy rain and heavy snow expected tomorrow.";
 	String[] needles = {"Heavy", "heavy", "rain", "snow", "expected", "Friday"};
@@ -64,20 +64,30 @@ In this example, `Heavy` returns `1`, because it appears twice in *haystack* but
 	
 Returns:
 	
-	Too many words!
+	Too many words! 
+
+In this example, `String[] needles` contains more than 5 elements.
 
 
 [Back to ***On this page***](#top)
 
-## Use case example<a name="Uses"/>
+## Use case examples<a name="Uses"/>
 
-The following is an example of a **findNeedles()** use case:
+The following are examples of a **findNeedles()** use cases:
 
-- SEO keyword indexing:
-	- Given a keyword list as *needles* and your files as *haystacks*, 
+- SEO keyword counter:
+	- Given a keyword list as *needles* and use your files as *haystacks*, 
 	you can iterate over the files and compare your list of *needles* using each 
 	file (converted to a string) as a *haystack*. Each *needle* is counted and 
 	you can see the frequency your targets use the list of keywords.
+	
+- Terminology checker:
+	- Sent chunks of your term list as *needles* to check for phrases in your files as *haystacks*.
+	Some features may be causing users errors because of misaligned terminology. Having multiple 
+	phases for the same actions like "open", "click", "double-click", and "select" may need alignment to help users navigate effectively.
+	Iterate over the files and compare your list of *needles* using each file (converted to a string) as a *haystack*.
+	
+	
 	
 [Back to ***On this page***](#top)
 
@@ -87,12 +97,16 @@ The following is an example of a **findNeedles()** use case:
 
 Method | findNeedles()      
 ------ | ------
-Description | Java-based API that performs ***case-sensitive*** and ***space-sensitive*** searches for array elements in a string and returns the frequency for each element found
-Parameters | Mandatory; `String haystack`: A string of unrestricted length. <br> Mandatory; `String[] needles`: An array of **up to 5 elements**.<br> 
-Error messages | `Too many words!`: More than 5 elements were sent as part of `String[] needles`.
+Description | Java-based API that performs ***case-sensitive*** and ***space-sensitive*** searches for an of array up to 5 elements in a string and returns the frequency for each element found
+Parameters | Mandatory; `String haystack`: A string of unrestricted length. <br> Mandatory; `String[] needles`: An array of **up to 5 elements**.<br> If you do not input both parameters, null is returned.
+Error messages | `Too many words!`: More than 5 elements were sent as part of `String[] needles`. 
 
-For usage, see [findNeedles() example](#Example).
 
+For example call, see [findNeedles() example](#Example).
+
+For an example of usage, see [Use case examples](#Uses).
+
+For error message example, see [findNeedles() error messages](#Errors).
 
 [Back to ***On this page***](#top)
 
