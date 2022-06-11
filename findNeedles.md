@@ -4,7 +4,7 @@
 
 > **On this page:**
 > 
-> [Getting Started](#Overview)
+> [Overview](#Overview)
 - [findNeedles() example](#Example)
 - [findNeedles() error messages](#Errors)
 >
@@ -14,7 +14,7 @@
 - [Method reference](#Method_ref)
 - [Source code reference](#Source_code_ref)
 
-## Getting Started <a name="Overview"/>
+## Overview <a name="Overview"/>
 
 **findNeedles()** is a Java-based API called with two mandatory user inputs:
 
@@ -82,7 +82,7 @@ The following are examples of a **findNeedles()** use cases:
 	you can see the frequency your targets use the list of keywords.
 	
 - Terminology checker:
-	- Sent chunks of your term list as *needles* to check for phrases in your files as *haystacks*.
+	- Send portions of your term list as *needles* to check for phrases in your files as *haystacks*.
 	Some features may be causing users errors because of misaligned terminology. Having multiple 
 	phases for the same actions like "open", "click", "double-click", and "select" may need alignment to help users navigate effectively.
 	Iterate over the files and compare your list of *needles* using each file (converted to a string) as a *haystack*.
